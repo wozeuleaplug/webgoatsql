@@ -110,7 +110,7 @@
 ### Крок 9: Порушення доступності (Availability / DROP TABLE)
 - **Мета**: Повністю знищити таблицю логів `access_log`, щоб приховати сліди зловмисної діяльності.
 - **Введений Payload**:
-  - Поле `Action contains`: `Brenda'; DROP TABLE access_log; --`
+  - Поле `Action contains`: `Brenda'; DROP TABLE access_log;--`
 - **Результат**: Таблицю `access_log` видалено з БД через ін'єкцію `DROP TABLE`, що призвело до порушення доступності системних даних.
 - **Доказ виконання**:
   ![Крок 9](9.png)
